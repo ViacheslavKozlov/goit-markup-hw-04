@@ -48,10 +48,8 @@ body {
   color: var(--common-text);
 }
 .link:hover, .link:active, .link:focus, .link-adress:hover, 
-.link-adress:active, .link-adress:focus, .link.active, 
-.email-icon:hover, .smartphone-icon:hover {
+.link-adress:active, .link-adress:focus, .link.active {
   color: var(--button-active-color);
-  fill: var(--button-active-color)
 }
 .logo {
   font-family: "Raleway";
@@ -90,6 +88,10 @@ body {
   margin-right: 10px;
   fill: var(--common-text);
   cursor: pointer;
+}
+.nav-adress .link-adress:hover svg,
+.nav-adress .link-adress:focus svg {
+  fill: var(--button-active-color);
 }
 
 /*footer*/
@@ -161,6 +163,9 @@ footer {
 .links .item:hover,
 .links .item:focus {
   background-color: var(--button-active-color);
+}
+.links .item:hover svg,
+.links .item:focus svg {
   fill: var(--main-text-color);
 }
 footer .container {
@@ -218,6 +223,7 @@ footer .container {
 .features-set {
   display: flex;
   align-items: center;
+  padding-top: 94px;
   padding-bottom: 0px;
 }
 .features-set .item {
@@ -241,9 +247,9 @@ footer .container {
   letter-spacing: 0.03em;
 }
 .feature-icon {
-  display: flex;
-  margin-top: 94px;
+  display: block;
   margin-bottom: 30px;
+  padding: 25px 100px;
   background-color: var(--button-background);
 }
 .tasks {
@@ -316,15 +322,6 @@ footer .container {
 .team-set .link-icon {
   fill: #AFB1B8;
   cursor: pointer;
-}
-.team-set .link-icon:hover,
-.team-set .link-icon:focus {
-  fill: var(--main-text-color);
-}
-.team-set .item:hover,
-.team-set .item:focus {
-  background-color: var(--button-active-color);
-  fill: var(--main-text-color);
 }
 .team-member-description .links {
   margin-bottom: 30px;
